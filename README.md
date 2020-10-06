@@ -58,10 +58,11 @@ php EntryPoint.php : permet de lancer les combats ET de générer un fichier ind
 
 ## Notes
 
+- Ne pas modifier les fichiers dans : src/Game/Engine/* | src/Game/PlayerIA/Player.php | src/Tests/* | racine de ce projet  
 - Les boucles infinis, l'utilisation de die, exit, exceptions, signal, ... sont interdits.
 - Une vérification du temps d'execution sera effectué.
 - Les valeurs de la matrice de gains/pertes sont amenées à évoluer, ainsi que le nombre de tours pour un match (le nombre de tours sera toujours supérieur à 100).
-- Les IAs Lazy, Crazy ne seront pas les mêmes sur l'environnement final. Elles ne servent qu'à tester votre propre IA.
+- Les IAs déjà présentes ne seront pas les mêmes sur l'environnement final. Elles ne servent qu'à tester votre propre IA.
 
 ## Quotes
 
