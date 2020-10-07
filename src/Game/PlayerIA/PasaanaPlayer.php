@@ -8,6 +8,7 @@ use Hackathon\Game\Result;
  * Class PasaanaPlayers
  * @package Hackathon\PlayerIA
  * @author YOUR NAME HERE
+ * Darius Gros
  */
 class PasaanaPlayer extends Player
 {
@@ -23,11 +24,11 @@ class PasaanaPlayer extends Player
         }
         else
         {
-            if($this->result->getLastchoiceFor($this->opponentSide) == 'rock')
+            if($this->result->getLastchoiceFor($this->opponentSide) === 'rock')
             {
                return $this->parent::paperChoice();
             }
-             elseif ($this->result->getLastchoiceFor($this->opponentSide) == 'paper')
+             elseif ($this->result->getLastchoiceFor($this->opponentSide) === 'paper')
             {
                 return $this->parent::scissorsChoice();
             }
@@ -60,9 +61,5 @@ class PasaanaPlayer extends Player
         // -------------------------------------    -----------------------------------------------------
         // How can i display the result of each round ? $this->prettyDisplay()
         // -------------------------------------    -----------------------------------------------------
-
-
-        
-
     }
 };
