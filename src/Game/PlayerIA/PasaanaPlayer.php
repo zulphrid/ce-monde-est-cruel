@@ -19,21 +19,21 @@ class PasaanaPlayer extends Player
     {
         if (0)
         {
-            $this->paperChoice();
+            $this->parent::paperChoice();
         }
         else
         {
             if($this->result->getLastchoiceFor($this->opponentSide) == 'rock')
             {
-                $this->paperChoice();
+                $this->parent::paperChoice();
             }
              elseif ($this->result->getLastchoiceFor($this->opponentSide) == 'paper')
             {
-                $this->scissorsChoice();
+                $this->parent::scissorsChoice();
             }
             else
             {
-                $this->rockChoice();
+                $this->parent::rockChoice();
             }
 
         }
