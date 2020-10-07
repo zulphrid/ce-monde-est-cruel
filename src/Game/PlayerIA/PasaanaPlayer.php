@@ -17,6 +17,26 @@ class PasaanaPlayer extends Player
 
     public function getChoice()
     {
+        if (0)
+        {
+            $this->paperChoice();
+        }
+        else
+        {
+            if($this->result->getLastchoiceFor($this->opponentSide) == 'rock')
+            {
+                $this->paperChoice();
+            }
+             elseif ($this->result->getLastchoiceFor($this->opponentSide) == 'paper')
+            {
+                $this->scissorsChoice();
+            }
+            else
+            {
+                $this->rockChoice();
+            }
+
+        }
         // -------------------------------------    -----------------------------------------------------
         // How to get my Last Choice           ?    $this->result->getLastChoiceFor($this->mySide) -- if 0 (first round)
         // How to get the opponent Last Choice ?    $this->result->getLastChoiceFor($this->opponentSide) -- if 0 (first round)
